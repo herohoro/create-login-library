@@ -40,11 +40,11 @@ import styles from './styles.module.css'
 // const Code = dynamic(() =>
 //   import('react-notion-x').then((notion) => notion.Code)
 // )
-//
+
 // const Collection = dynamic(() =>
 //   import('react-notion-x').then((notion) => notion.Collection)
 // )
-//
+
 // const CollectionRow = dynamic(
 //   () => import('react-notion-x').then((notion) => notion.CollectionRow),
 //   {
@@ -54,6 +54,8 @@ import styles from './styles.module.css'
 
 // TODO: PDF support via "react-pdf" package has numerous troubles building
 // with next.js
+// const Pdf = dynamic(() => import('react-notion-x').then((notion) => notion.Pdf))
+// https://github.com/transitive-bullshit/nextjs-notion-starter-kit/commit/c7d572ed58d49d2c3f6a7245a1f1edc8929e96df
 // const Pdf = dynamic(
 //   () => import('react-notion-x').then((notion) => notion.Pdf),
 //   { ssr: false }
@@ -253,6 +255,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
           collection: Collection,
           collectionRow: CollectionRow,
           tweet: Tweet,
+          // pdf: Pdf,
           modal: Modal,
           equation: Equation
         }}
